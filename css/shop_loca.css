@@ -61,12 +61,13 @@
 	
 		
 		
-		#layout{width:1600px; margin:auto; position:relative; margin-top:140px;  margin-bottom:300px;}
+		#layout{width:1600px; margin:auto; position:relative; margin-bottom:200px; }
 		
-		section{color:white; background:black; display:flex; padding:70px 130px; align-items:center; margin-top:-8px;}
-		section a{background:white; color:black; border-radius:10px; padding:10px 20px; font-family: 'Slabo 27px', serif; font-weight:bold; margin-left:50px;}
-		section span{transform:translateY(6px);}
-		
+		section{margin-top:170px; padding:50px; border:2px solid #f3b39f; }
+		section div{display:flex;}
+		section img{margin-left:0px; flex:1;}
+		section h2{background:#f3b39f; padding:95px 50px; flex:0.7; font-size:2.4rem; color:#282c2f;}
+		section p{padding:50px; line-height:180%;}
 		
 		footer{ padding:40px 230px; width:100%; /*border:5px solid black;*/ line-height:190%; background:#f3d3d6; font-weight:bold; font-size:12pt; margin:auto; text-align:center;}
 		footer img{margin-bottom:30px; margin-left:40px;}
