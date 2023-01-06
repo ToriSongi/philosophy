@@ -61,7 +61,7 @@
 	
 		
 		
-		#layout{width:1600px; margin:auto; position:relative; overflow-x:hidden;  /*overflow-y:auto;*/ margin-bottom:300px; /*height:7480px;*/ border:0px solid red;}
+		#layout{width:1600px; margin:auto; position:relative; overflow-x:hidden;  /*overflow-y:auto;*/ margin-bottom:150px; /*height:7480px;*/ border:0px solid red; }
 		
 		section h2{font-family: 'Slabo 27px', serif; text-decoration:underline; padding-left:30px;}
 		
@@ -141,7 +141,7 @@
 		
 		
 		
-		#layout2{margin:auto;}
+		#layout2{margin:auto; border:0px solid red;}
 		
 		#peeling{margin-top:0px; width:1600px; margin:auto;}
 		#peeling h2{display:none;}
@@ -191,16 +191,19 @@
 		
 		
 		#step3{position:relative; margin-top:890px; margin-bottom:50px;}
-		#step3>div>img{position:absolute; width:600px; top:170px; border:10px solid white; box-shadow:4px 4px 9px rgba(0,0,0,0.5); margin-bottom:50px;}
+		#step3>div>img{position:absolute; width:600px; top:40px; border:10px solid white; box-shadow:4px 4px 9px rgba(0,0,0,0.5); margin-bottom:50px;}
 		#step3>div:first-of-type{display:flex; padding:10px 100px 10px 440px; border:0px solid red;}
-		#step3>div>p{font-family: 'Slabo 27px', serif; font-weight:bold; margin-left:130px; font-size:1.5rem; position:absolute;}
+		#step3>div>p{font-family: 'Slabo 27px', serif; font-weight:bold; margin-left:130px; font-size:1.5rem; position:absolute; top:-90px; border:0px solid red;}
 		#step3>div>p:nth-of-type(1){left:810px;}
 		#step3>div>p:nth-of-type(2){left:470px;}
 		
 		
-		#step3>div>img:nth-of-type(1){left:500px;}
+		#step3>div>img:nth-of-type(1){left:500px; }
 		#step3>div>img:nth-of-type(2){left:180px;}
-		#step3>div>img:nth-of-type(3){left:1180px; top:350px; border:none; box-shadow:none; width:300px; }
+		/*#step3>div>img:nth-of-type(3){left:1180px; top:350px; border:none; box-shadow:none; width:300px; }*/
+		
+		#step3>img{left:1180px; top:350px; width:300px; z-index:1; position:absolute;  }
+		
 		
 		footer{ padding:40px 230px; width:100%; /*border:5px solid black;*/ line-height:190%; background:#f3d3d6; font-weight:bold; font-size:12pt; margin:auto; text-align:center; margin-top:650px;}
 		footer img{margin-bottom:30px; margin-left:40px;}

@@ -102,16 +102,29 @@ $(document).ready(function(){
 			});
 			}					
 				
-			$("#click").mouseenter(function(){
-				$("#preview1+div").slideDown();
-				
-			});
+			//$("#click").mouseenter(function(){});
 			
+			let c=0;
 			$("#click").click(function(){
-				$("#preview1+div").slideUp();
-				
+				c++;
+				if(c==1){$("#preview1+div").slideDown();
+				//console.log(c);
+				}
+				else{
+					$("#preview1+div").slideUp(); 
+					c=0; } //console.log(c);
 			});
 			
+			/*$("#click").click(function(){
+				let c=0;
+				c++;
+				if(c==odd){$("#preview1+div").slideDown();
+				
+				}
+				else{
+					$("#preview1+div").slideUp(); 
+					}
+			});*/
 			
 			$("#step2>div:first-of-type>p, #step2>div:last-of-type>img").mouseenter(function(){
 				const stp=$(this).index();
@@ -127,13 +140,13 @@ $(document).ready(function(){
 			
 			$("#step3>div:first-of-type>p, #step3>div:last-of-type>img").mouseenter(function(){
 				const st3=$(this).index();
-			 $("#step3>div:last-of-type>img").eq(st3).css("z-index","1").stop().animate({top:"85px"}).siblings().css({"filter":"grayscale(100%)"});
+			 $("#step3>div:last-of-type>img").eq(st3).css("z-index","1").stop().animate({top:"-30px"}).siblings().css({"filter":"grayscale(100%)","top":"40px"});
 			  $("#step3>div:first-of-type>p").eq(st3).css("fontSize","2.5rem");
 			});
 			
 			$("#step3>div:first-of-type>p, #step3>div:last-of-type>img").mouseleave(function(){
 				const st3=$(this).index();
-			 $("#step3>div:last-of-type>img").css("z-index","0").stop().animate({top:"170px"}).siblings().css({"filter":"grayscale(0%)"});
+			 $("#step3>div:last-of-type>img").eq(st3).css("z-index","0").stop().animate({top:"40px"}).siblings().css({"filter":"grayscale(0%)","top":"40px"});
 			  $("#step3>div:first-of-type>p").eq(st3).css("fontSize","1.5rem");
 			});
 });///////end
