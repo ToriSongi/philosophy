@@ -106,11 +106,12 @@ $(document).ready(function(){
 			let b=0;
 			function big(){
 				b++;
-			if(b==0) $("#recomm>div>div>img").addClass("toBig").siblings().removeClass("toBig");
+			if(b==0){ $("#recomm>div>div>img").addClass("toBig").siblings().removeClass("toBig");
 			b=3;}
-			b--;
-			if(b==3)$("#recomm>div>div>img").addClass("toBig").siblings().removeClass("toBig");
-			b=0;
+			
+			if(b==3){b--;
+				$("#recomm>div>div>img").addClass("toBig").siblings().removeClass("toBig");
+			b=0;}
 			}
 				
 	
