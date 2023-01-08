@@ -125,7 +125,8 @@
 		#recomm>div>div{flex:1; padding:50px 35px; justify-content:space-between;}
 		#recomm>div>div:first-child{margin-left:150px;}
 		#recomm>div>div>img{width:240px; margin:10px; transition:0.4s; border-radius:10px;}
-		#recomm>div>div>img:hover{transform:scale(1.4);}
+		#recomm>div>div>img.toBig{transform:scale(1.4);}
+		/*#recomm>div>div>img:hover{transform:scale(1.4);}*/
 		#recomm>div>div:last-of-type {color:white; line-height:150%; padding-top:50px; margin-left:-70px;}
 		#recomm>div>div:last-of-type p:first-of-type{font-size:0.8rem;}
 		#recomm>div>div:last-of-type p:last-child{color:#98c1da; font-weight:600;}
