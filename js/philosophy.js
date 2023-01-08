@@ -100,7 +100,20 @@ $(document).ready(function(){
 				$("#downslide>div").stop().animate({top:"-350px" }, 1400, function(){$(this).prepend($(this).children().last()); 
 					$(this).css("top","-700px");
 			});
-			}					
+			}		
+	
+			setInterval(big, 3000);	
+			let b=0;
+			function big(){
+				b++;
+			if(b==0) $("#recomm>div>div>img").addClass("toBig").siblings().removeClass("toBig");
+			b=3;}
+			b--;
+			if(b==3)$("#recomm>div>div>img").addClass("toBig").siblings().removeClass("toBig");
+			b=0;
+			}
+				
+	
 				
 			//$("#click").mouseenter(function(){});
 			
