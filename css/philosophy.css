@@ -240,6 +240,7 @@
 		#big-logo{display:block; margin-top:30px; }
 		#icons{margin-top:-90px; margin-left:1100px; }
 		#icons a{font-size:4.8rem; margin-right:7px;} 
+		#fade-img { margin-top:230px;}
 		#new{position:relative;}
 		#new>div{flex-direction:column;}
 		#new>div>div{width:900px; height:900px; margin:90px 200px;}
@@ -278,8 +279,6 @@
 		
 		}
 		
-		
-		/***반응형***/
 		@media(max-width:397px){
 		
 		#big-logo{display:block; margin-left:630px; }
