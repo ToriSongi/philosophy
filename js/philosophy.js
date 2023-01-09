@@ -100,23 +100,23 @@ $(document).ready(function(){
 				$("#downslide>div").stop().animate({top:"-350px" }, 1400, function(){$(this).prepend($(this).children().last()); 
 					$(this).css("top","-700px");
 			});
-			}		
-	
-			setInterval(big, 3000);	
-			let b=0;
-			function big(){
-				b++;
-			if(b==0){ $("#recomm>div>div>img").addClass("toBig").siblings().removeClass("toBig");
-			b=3;}
+			}					
+				
+		
+			//순차적으로 이미지가 커지는 이벤트
+			let scale=setInterval(sns, 5800);
+			function sns(){
+				$("#recomm>div>div>img").each(function(e){
+					var icons=$(this);
+					setTimeout(function(){
+					icons.addClass("toBig");}, e*1000+200);
+					setTimeout(function(){
+					icons.removeClass("toBig");}, e*1000+950);	
+					});
+				}
+				
 			
-			if(b==3){b--;
-				$("#recomm>div>div>img").addClass("toBig").siblings().removeClass("toBig");
-			b=0;}
-			}
-				
-	
-				
-			//$("#click").mouseenter(function(){});
+			
 			
 			let c=0;
 			$("#click").click(function(){
@@ -152,15 +152,16 @@ $(document).ready(function(){
 			 $("#step2>div:first-of-type>p").eq(stp).css("fontSize","1.5rem");
 			});
 			
-			$("#step3>div:first-of-type>p, #step3>div:last-of-type>img").mouseenter(function(){
+			$("#step3>div:nth-of-type(2)>p, #step3>div:nth-of-type(3)>img").mouseenter(function(){
 				const st3=$(this).index();
-			 $("#step3>div:last-of-type>img").eq(st3).css("z-index","1").stop().animate({top:"-30px"}).siblings().css({"filter":"grayscale(100%)","top":"40px"});
-			  $("#step3>div:first-of-type>p").eq(st3).css("fontSize","2.5rem");
+			 $("#step3>div:nth-of-type(3)>img").eq(st3).css("z-index","1").stop().animate({top:"-30px"}).siblings().css({"filter":"grayscale(100%)","top":"40px"});
+			  $("#step3>div:nth-of-type(2)>p").eq(st3).css("fontSize","2.5rem");
 			});
 			
-			$("#step3>div:first-of-type>p, #step3>div:last-of-type>img").mouseleave(function(){
+			$("#step3>div:nth-of-type(2)>p, #step3>div:nth-of-type(3)>img").mouseleave(function(){
 				const st3=$(this).index();
-			 $("#step3>div:last-of-type>img").eq(st3).css("z-index","0").stop().animate({top:"40px"}).siblings().css({"filter":"grayscale(0%)","top":"40px"});
-			  $("#step3>div:first-of-type>p").eq(st3).css("fontSize","1.5rem");
+			 $("#step3>div:nth-of-type(3)>img").eq(st3).css("z-index","0").stop().animate({top:"40px"}).siblings().css({"filter":"grayscale(0%)","top":"40px"});
+			  $("#step3>div:nth-of-type(2)>p").eq(st3).css("fontSize","1.5rem");
 			});
+			
 });///////end
