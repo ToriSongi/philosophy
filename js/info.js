@@ -63,7 +63,7 @@ $(document).ready(function(){
 					const part3=$("#part3").offset().top-600;
 					const part4=$("#part4").offset().top-600;
 					const part5=$("#part5").offset().top-600;
-					const part6=$("#part6").offset().top-600;
+					const part6=$("#part6").offset().top-800;
 					
 					if(i>= part2){
 					$("#part2>div").addClass("act");
