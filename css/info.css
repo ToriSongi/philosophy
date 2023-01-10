@@ -130,7 +130,7 @@
 		#part5 div{order:2; margin-right:0;}
 		#part5 img{order:1;}
 		#part6 img{margin-right:0;}
-		
+		#part6>div.active{transform:translateY(0px); opacity:1;} 
 		
 		}
 		
