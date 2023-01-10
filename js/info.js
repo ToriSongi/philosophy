@@ -63,7 +63,8 @@ $(document).ready(function(){
 					const part3=$("#part3").offset().top-600;
 					const part4=$("#part4").offset().top-600;
 					const part5=$("#part5").offset().top-600;
-					const part6=$("#part6").offset().top-900;
+					const part6=$("#part6").offset().top-600;
+					const part6_1=$("#part6").offset().top-1100;
 					
 					if(i>= part2){
 					$("#part2>div").addClass("act");
@@ -80,7 +81,9 @@ $(document).ready(function(){
 					if(i>= part6){
 					$("#part6>div").addClass("act");
 					}
-					
+					if(i>= part6_1){
+					$("#part6>div").addClass("active");
+					}
 					
 			});
 				
