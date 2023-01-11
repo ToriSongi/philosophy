@@ -28,25 +28,7 @@ $(document).ready(function(){
 			
 			
 			
-			$("#rectang>div").click(function(){
-				const rt=$(this).index();
-				$(this).addClass("bk").siblings().removeClass("bk");
-				$("#fade-img>div>img").eq(rt).fadeIn().siblings().fadeOut();
-			});
-			
-			
-			$(".left").click(function(){
-				
-					console.log($("#sellermove>div").position().left);
-					if($("#sellermove>div").position().left>-500){$("#sellermove>div").stop().animate({left:"-=200px"});}
-				});
-			$(".right").click(function(){
-				
-					//console.log($("#sellermove>div").position().left);
-					if($("#sellermove>div").position().left<280){$("#sellermove>div").stop().animate({left:"+=200px"});}
-			});
-			
-			
+	
 				
 			//스크롤 이벤트	
 			$(document).scroll(function(){
@@ -79,24 +61,10 @@ $(document).ready(function(){
 					if(i>=450){
 					$("#goTop").css("display","block");}
 					
-					const newShow=$("#new").offset().top-550;
-					const natureShow=$("#nature").offset().top-550;
-					if(i>=newShow){
-					$("#new").addClass("act");
-					}
-					if(i>=natureShow){
-					$("#nature").addClass("act");
-					}
 					
 			});
 				
-			setInterval(slide, 3000);
-			function slide(){
-				$("#downslide>div").stop().animate({top:"-350px" }, 1400, function(){$(this).prepend($(this).children().last()); 
-					$(this).css("top","-700px");
-			});
-			}					
-			
+	
 			$("#icons>span").click(function(){
 					$("#search").stop().slideDown();				
 			});
