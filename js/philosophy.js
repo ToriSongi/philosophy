@@ -67,7 +67,7 @@ $(document).ready(function(){
 					$(".above").removeClass("exc1");
 					$("#phone_ver>div>nav>a").removeClass("exc2");
 					$("header h1 img").css("width","180px");
-					
+					$("#search").removeClass("mov");
 					}
 					if(i>=150) {
 					$("header").addClass("pink");
@@ -77,6 +77,8 @@ $(document).ready(function(){
 					$(".above").addClass("exc1");
 					$("#phone_ver>div>nav>a").addClass("exc2");
 					$("header h1 img").css("width","90px");
+					$(".last").css("border-bottom","none");
+					$("#search").addClass("mov");
 					}
 					if(i<450){
 					$("#goTop").css("display","none");
@@ -94,7 +96,14 @@ $(document).ready(function(){
 					}
 					
 			});
-				
+			
+			$("#icons>span").click(function(){
+					$("#search").stop().slideDown();				
+			});
+			$("#close_x").click(function(){
+					$("#search").stop().slideUp();				
+			});
+			
 			setInterval(slide, 3000);
 			function slide(){
 				$("#downslide>div").stop().animate({top:"-350px" }, 1400, function(){$(this).prepend($(this).children().last()); 
