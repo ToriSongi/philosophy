@@ -83,7 +83,7 @@
 		
 		#shopbag>div:last-of-type{flex:1; padding:40px 40px; background:#eee;}
 		#shopbag>div:last-of-type>h3{margin-bottom:30px;}
-		#shopbag>div:last-of-type>h3>span{font-size:1.6rem;}
+		#shopbag>div:last-of-type>h3>span{font-size:1.6rem; float:right;}
 		#shopbag>div:last-of-type p span{float:right;}
 		#shopbag>div:last-of-type a{border:1px solid black; display:block; text-align:center; padding:10px; background:white; font-weight:bold; transition:0.5s;}
 		#shopbag>div:last-of-type a:hover{background:black; color:white;}
