@@ -93,7 +93,7 @@
 		#log_in>div:last-of-type a:hover{background:black; color:white;}
 		
 		#below{display:flex; align-items:center; margin-top:100px; }
-		#below div:first-child{width:600px; height:600px;  border-radius:50%; background:#eee; animation:color-c 5s infinite linear; }
+		#below div:first-child{width:600px; height:600px; background:#eee; animation:color-c 5s infinite linear; }
 		@keyframes color-c {
 			0%{background:#eee;}
 			40%{background:#f0ddd5;}
