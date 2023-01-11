@@ -68,7 +68,7 @@
 		#search.mov{position:absolute; top:105px; left:0;}
 		
 		
-		#layout{width:1600px; margin:auto; position:relative; margin-top:140px;  margin-bottom:300px;}
+		#layout{width:1600px; margin:auto; position:relative; margin-top:140px;  margin-bottom:200px;}
 		iframe{border:0px solid red;}
 		#shipping{color:#0e0e0e; background:#eee; padding:70px 130px; align-items:center; margin-top:-10px; line-height:170%; text-align:center; border-bottom:3px solid black;}
 		#shipping b{color:white; background:black; padding:20px 40px; font-size:1.2rem;}
