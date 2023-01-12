@@ -218,7 +218,9 @@
 		
 		#step3>div:first-of-type>img:nth-child(2){left:1250px; top:130px; width:300px; z-index:1; position:absolute;  }
 		#step3>div:first-of-type>img:nth-child(3){left:1180px; top:400px; width:300px; z-index:1; position:absolute;  }
-	
+		#step3>div>a{position:absolute; padding:10px 20px; background:black; color:white; top:580px; left:1400px; z-index:1;}
+		#step3>div>a:hover{background:white; color:black; border:1px solid black;}
+		
 		footer{ padding:40px 230px; width:100%; /*border:5px solid black;*/ line-height:190%; background:#f3d3d6; font-weight:bold; font-size:12pt; margin:auto; text-align:center; margin-top:650px;}
 		footer img{margin-bottom:30px; margin-left:40px;}
 		footer a{color:tomato; margin-left:90px; font-weight:600;}
