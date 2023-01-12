@@ -71,7 +71,7 @@
 		#layout{width:1600px; margin:auto; position:relative; margin-top:140px;  margin-bottom:300px;}
 		iframe{border:0px solid red;}
 		section{color:white; background:black; display:flex; padding:70px 130px; align-items:center; margin-top:-10px; }
-		section a{background:white; color:black; border-radius:10px; padding:10px 20px; font-family: 'Slabo 27px', serif; font-weight:bold; margin-left:50px;}
+		section a{background:white; color:black;  padding:10px 20px; font-family: 'Slabo 27px', serif; font-weight:bold; margin-left:50px;}
 		section span{transform:translateY(6px);}
 		#layout>img{margin-top:-9px; }
 		
