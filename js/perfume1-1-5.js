@@ -65,7 +65,22 @@ $(document).ready(function(){
 					
 			});
 				
-				
+		let t =  1; 
+			  //alert( typeof i);
+			  $("#min").click(function(){
+					console.log('마이너스');
+					t = Number($("#count").val());
+					t--;
+					if(t < 0){ t = 0; } 		
+					$("#count").val(t);
+			  });
+			  $("#plus").click(function(){
+					console.log('플러스');
+					t = Number($("#count").val());
+					t++;
+					$("#count").val(t);
+			  });
+	
 				
 			$("#small button").click( function(){
 			const x = $(this).children().attr("src");
