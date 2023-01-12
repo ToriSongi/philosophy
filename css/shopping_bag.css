@@ -158,7 +158,7 @@
 		#shopbag>div:first-of-type h2{font-size:3.7rem; padding:60px 10px;}
 		#shopbag>div:first-of-type p{font-size:2.7rem;}
 		#shopbag>div:first-of-type a{font-size:3.7rem; margin-left:370px;}
-		#shopbag>div:last-of-type {margin-top:70px;}
+		#shopbag>div:last-of-type {margin-top:70px; padding:90px;}
 		#shopbag>div:last-of-type>h3{font-size:3.6rem; margin-bottom:80px;}
 		#shopbag>div:last-of-type>h3>span{font-size:4rem;}
 		#shopbag>div:last-of-type p{font-size:3rem; line-height:200%;}
@@ -197,7 +197,7 @@
 		#shipping span{font-size:2.5rem;}
 		#shopbag>div:first-of-type h2{font-size:3rem; padding:60px 10px;}
 		#shopbag>div:first-of-type p{font-size:2rem;}
-		#shopbag>div:first-of-type a{font-size:3rem; margin-left:0px;}
+		#shopbag>div:first-of-type a{font-size:3rem; margin-left:0px; width:700px;}
 		#shopbag>div:last-of-type {margin-top:70px; width:930px}
 		#shopbag>div:last-of-type>h3{font-size:2rem; margin-bottom:80px;}
 		#shopbag>div:last-of-type>h3>span{font-size:2rem;}
